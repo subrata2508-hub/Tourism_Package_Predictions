@@ -4,7 +4,7 @@ from huggingface_hub import hf_hub_download
 import joblib
 
 # Download and load the model
-model_path = hf_hub_download(repo_id="subrata2508-hub/Tourism_Package_Predictions", filename="best_machine_failure_model_v1.joblib")
+model_path = hf_hub_download(repo_id="subrata2508/Tourism-Package-Prediction", filename="best_machine_failure_model_v1.joblib")
 model = joblib.load(model_path)
 
 # Streamlit UI for Machine Failure Prediction
